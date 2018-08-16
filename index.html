@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+
+  <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-	<meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
     <title>fudbolki</title>
-	<link href="styles.css" rel="stylesheet">
-	<script src="script.js"></script>
-	<script src="jquery-3.3.1.js"></script>
-</head>
+    <link href="styles.css" rel="stylesheet">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+  </head>
 
-<body>
+  <body>
 
-	<div class="container">
-		<div class="content">
-		 <img src="img/itemPink.jpg">
-		</div>
-		<div class="constructor">
-			<div class="color-list">
-				<img class="color-item" src="img/black.jpg">
-				<img class="color-item" src="img/green.jpg">
-				<img class="color-item" src="img/pink.jpg">
-				<img class="color-item" src="img/red.jpg">
-				<img class="color-item" src="img/white.jpg">
-				<img class="color-item" src="img/yellow.jpg">
-				<img class="color-item" src="img/blue.jpg">
-			</div>	
-		</div>
-	</div>
+    <div class="container">
 
-</body>
+      <div class="content">
+        <img class="mainPhoto" src="img/itemBlack.jpg">
+
+      </div>
+      <div class="constructor">
+        <div class="colorList">
+          <img class="colorItem" id="black" src="img/black.jpg">
+          <img class="colorItem" id="green" src="img/green.jpg">
+          <img class="colorItem" id="pink" src="img/pink.jpg">
+          <img class="colorItem" id="red" src="img/red.jpg">
+          <img class="colorItem" id="white" src="img/white.jpg">
+          <img class="colorItem" id="yellow" src="img/yellow.jpg">
+          <img class="colorItem" id="blue" src="img/blue.jpg">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var src;
+      $(".colorItem").bind('click', function(e) {
+        src = $(this).attr("id");
+        switch (src) {
+          case "black":
+            $(".mainPhoto").attr("src", "img/itemBlack.jpg");
+            break;
+          case "green":
+            $(".mainPhoto").attr("src", "img/itemGreen.jpg");
+            break;
+          case "pink":
+            $(".mainPhoto").attr("src", "img/itemPink.jpg");
+            break;
+          case "red":
+            $(".mainPhoto").attr("src", "img/itemRed.jpg");
+            break;
+          case "white":
+            $(".mainPhoto").attr("src", "img/itemWhite.jpg");
+            break;
+          case "yellow":
+            $(".mainPhoto").attr("src", "img/itemYellow.jpg");
+            break;
+          case "blue":
+            $(".mainPhoto").attr("src", "img/itemBlue.jpg");
+            break;
+          default:
+            console.log("4to-to powlo ne tak");
+            break;
+        }
+      })
+
+    </script>
+
+  </body>
+
 </html>

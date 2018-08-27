@@ -1,33 +1,56 @@
 
-.container{
+.wrapper {
 	width: 1200px;
 	margin: 0 auto;
 }
 
-.content{
-	width: 900px;
+.content {
+	width: 800px;
 	margin: 0 auto;
 	float: left;
+	text-align: center;
 
 }
 
-.content img{
-	max-width: 900px;
+.content img {
+	max-width: 750px;
 }
 
-.constructor{
+.constructor {
 	margin-top: 120px;
 	display: inline-block;
-	max-width: 300px;
 	float: right;
+	width: 400px;
 }
 
-.colorList{
+.color-list {
+	height: 40px;
+	margin-bottom: 5px;
+}
+.color-list, .size-list {
 	display: flex;
 }
 
-.colorItem{
+.color-item {
 	margin: 5px;
 	border: 1px solid #888;
+	height: 30px;
+	width: 30px;
 
+}
+
+.btn {
+	margin: 3px;
+	width: 50px;
+
+}
+
+
+.color-active {
+	border: 3px solid #c0392b;
+
+}
+
+.invisible{
+	display: none;
 }

@@ -51,6 +51,24 @@
 
 }
 
-.invisible{
+.quantity-block {
+	height: 40px;
+	margin-top:10px;
+	/*display: flex;*/
+}
+
+.quantityinput {
+	display: inline-block;
+}
+
+.quantity-submit {
+	width: auto;
+	height: 40px;
+	margin: 0 0 0 10px;
+	/*margin-right: 8px;*/
+	box-sizing: border-box;
+}
+
+.invisible {
 	display: none;
 }
